@@ -1,0 +1,21 @@
+# Dependencies
+node_modules
+
+# Build outputs
+dist
+*.local
+
+# Logs & env
+*.log
+.env
+.env.*
+!.env.example
+
+# Stellar / Soroban
+contracts/**/target/
+
+# OS & editors
+.DS_Store
+.idea
+.vscode/*
+!.vscode/extensions.json

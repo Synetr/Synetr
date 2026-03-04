@@ -85,24 +85,55 @@ Frontend:
 
 Backend:
 - Node.js
-- Express / NestJS
-- PostgreSQL / MongoDB
+- Express
+- TypeScript
+
+Contracts:
+- Stellar (Soroban)
 
 ---
 
 ## 📦 Project Structure
 
+```
 synetr/
-├── frontend/
-├── backend/
+├── frontend/     # React + Vite + TypeScript + Tailwind + shadcn
+├── backend/      # Node + Express + TypeScript
+├── contracts/    # Stellar (Soroban) smart contracts
 └── README.md
+```
+
+### Contracts (Stellar)
+
+Smart contracts are built on **Stellar** using **Soroban** (Rust → WASM). See [contracts/README.md](contracts/README.md) for setup and deployment.
 
 ---
 
 ## 🚀 Running Locally
 
-### Clone Repository
+### Clone repository
 
 ```bash
-git clone https://github.com/your-username/synetr.git
+git clone https://github.com/Synetr/Synetr.git
 cd synetr
+```
+
+### Frontend (React + Vite + TypeScript + Tailwind + shadcn)
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Runs at `http://localhost:5173`.
+
+### Backend (Node + Express + TypeScript)
+
+```bash
+cd backend
+npm install
+npm run dev
+```
+
+API runs at `http://localhost:3001` (e.g. `GET /health`, `GET /api`).
